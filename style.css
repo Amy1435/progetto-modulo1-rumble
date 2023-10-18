@@ -143,7 +143,8 @@ header > section {
     border: none;
 }
 
-.button.sign-in:hover {
+.button.sign-in:hover,
+.button.sign-up:hover {
     background-color: #f3f5f8;
     cursor: pointer;
 }
@@ -229,6 +230,12 @@ span.wrap-text {
     white-space: normal;
 }
 
+.menu.theme-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
 /* ---------------- */
 /* NAV*/
 /* -------------------- */
@@ -240,6 +247,7 @@ nav {
     overflow: auto;
     height: 60px;
     border-left: 1px solid lightgray;
+    z-index: 1;
 }
 .nav-wrapper {
     display: flex;
