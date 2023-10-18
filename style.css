@@ -118,6 +118,10 @@ header {
     justify-content: space-between;
     padding: 0 1.5rem;
     border-bottom: 1px solid lightgray;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    height: 8vh;
 }
 
 header > section {
@@ -173,6 +177,8 @@ header > section {
 
 aside {
     overflow: auto;
+    position: fixed;
+    top: 5rem;
 }
 /* ASIDE 1 menu*/
 
@@ -313,6 +319,9 @@ main > section {
     gap: 2rem;
 }
 /* other categories 1 row*/
+.video {
+    background-color: #e9ebee;
+}
 
 .conteiner-big-videos {
     display: grid;
@@ -352,6 +361,38 @@ main > section {
     gap: 1.5rem;
 }
 
+/*footer*/
+footer {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-nav > ul {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.footer-nav.text-bold > ul {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.footer-text-small > span {
+    font-size: 0.7rem;
+}
 /* ---------------- */
 /* MEDIA QUERY */
 /* -------------------- */
