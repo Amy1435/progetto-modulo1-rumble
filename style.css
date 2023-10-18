@@ -93,7 +93,7 @@ body > main {
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    border: 2px solid red;
+    border: 1px solid lightgray;
 }
 
 .title-videos {
@@ -209,6 +209,12 @@ aside::-webkit-scrollbar {
     gap: 1.5rem;
 }
 
+.img-featured-red {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid red;
+}
 .channels-featured > ul {
     gap: 1rem;
 }
@@ -372,12 +378,43 @@ main > section {
     overflow: hidden;
 }
 
+.video-screen {
+    position: relative;
+}
+
+.video-screen span {
+    position: absolute;
+    bottom: 14px;
+    right: 42px;
+    color: white;
+    background-color: black;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
 /* other categories 2 row*/
 
 .conteiner-big-videos.two-rows {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     gap: 1.5rem;
+}
+
+.video-screen-live {
+    position: relative;
+}
+
+.video-screen-live span {
+    position: absolute;
+    bottom: 14px;
+    right: 21px;
+    color: white;
+    background-color: #f23160;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+.thumbnail.live {
+    border: 2px solid #f23160;
 }
 
 /*footer*/
