@@ -42,3 +42,20 @@ body > main {
     grid-area: ma;
     background-color: yellow;
 }
+
+/* ---------------- */
+/* MEDIA QUERY */
+/* -------------------- */
+
+/* MEDIA QUERY MAX-WIDTH 960 */
+
+@media screen and (max-width: 960px) {
+    body {
+        grid-template-areas:
+            "he he"
+            "nav nav"
+            "ma ma";
+    }
+}
+
+/* MEDIA QUERY MAX-WIDTH 640px */
