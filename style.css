@@ -34,6 +34,7 @@ body > aside {
 
 body > nav {
     grid-area: nav;
+    background-color: white;
 }
 
 body > main {
@@ -122,6 +123,7 @@ header {
     width: 100%;
     background-color: white;
     height: 8vh;
+    z-index: 1;
 }
 
 header > section {
@@ -176,9 +178,17 @@ header > section {
 /* -------------------- */
 
 aside {
-    overflow: auto;
     position: fixed;
-    top: 5rem;
+    top: 68px;
+    overflow-y: auto;
+    height: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    z-index: 0;
+}
+
+aside::-webkit-scrollbar {
+    width: 0;
 }
 /* ASIDE 1 menu*/
 
@@ -216,6 +226,15 @@ span.wrap-text {
 /* ---------------- */
 /* NAV*/
 /* -------------------- */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 8%;
+    left: 80px;
+    overflow: auto;
+    height: 60px;
+    border-left: 1px solid lightgray;
+}
 .nav-wrapper {
     display: flex;
     gap: 1.3rem;
@@ -418,6 +437,9 @@ footer a {
 
     .tablet-hide {
         display: none;
+    }
+    nav {
+        left: 0px;
     }
 }
 
