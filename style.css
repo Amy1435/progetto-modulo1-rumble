@@ -71,6 +71,7 @@ body > main {
     text-decoration: none;
 }
 
+/* GENERICI 1 E 3 MENU */
 .menu span {
     white-space: nowrap;
 }
@@ -86,6 +87,10 @@ body > main {
     border-radius: 0.5rem;
 }
 
+.menu.theme-selector ul,
+.menu.first ul {
+    gap: 0.7rem;
+}
 /* ---------------- */
 /* HEADER */
 /* -------------------- */
@@ -159,10 +164,6 @@ aside {
     width: 20px;
 }
 
-.menu.first > ul {
-    gap: 0.7rem;
-}
-
 /* ASIDE 2 menu*/
 .channels-featured {
     display: flex;
@@ -191,9 +192,7 @@ aside {
 span.wrap-text {
     white-space: normal;
 }
-.theme-selector > ul {
-    gap: 0.7rem;
-}
+
 /* ---------------- */
 /* MEDIA QUERY */
 /* -------------------- */
