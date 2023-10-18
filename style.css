@@ -1,5 +1,6 @@
 :root {
     font-size: 1rem;
+    font-family: sans-serif;
 }
 
 * {
@@ -44,6 +45,70 @@ body > main {
 }
 
 /* ---------------- */
+/* GENERICI */
+/* -------------------- */
+.button {
+    padding: 1rem;
+    border-radius: 3.5rem;
+    font-weight: 600;
+}
+/* ---------------- */
+/* HEADER */
+/* -------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+
+header > section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    gap: 1.5rem;
+}
+
+.sign {
+    gap: 1.5rem;
+}
+
+.button.sign-in {
+    border: none;
+}
+
+.button.sign-in:hover {
+    background-color: #f3f5f8;
+    cursor: pointer;
+}
+
+.button.sign-up {
+    border: 2px solid #74cc1d;
+}
+
+.search-bar > input {
+    width: 30vw;
+    height: 35px;
+    border: 1px solid #f3f5f8;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+.search-bar > button {
+    height: 35px;
+    border-left: none;
+    border: 1px solid #f3f5f8;
+    padding: 0.2rem 0.75rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.search-bar > button > img {
+    height: 100%;
+}
+
+/* ---------------- */
 /* MEDIA QUERY */
 /* -------------------- */
 
@@ -51,10 +116,11 @@ body > main {
 
 @media screen and (max-width: 960px) {
     body {
+        grid-template-columns: 1fr;
         grid-template-areas:
-            "he he"
-            "nav nav"
-            "ma ma";
+            "he"
+            "nav"
+            "ma";
     }
 }
 
