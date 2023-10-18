@@ -30,12 +30,10 @@ body > header {
 
 body > aside {
     grid-area: as;
-    border: 1px solid blue;
 }
 
 body > nav {
     grid-area: nav;
-    background-color: green;
 }
 
 body > main {
@@ -98,6 +96,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0 1.5rem;
+    border-bottom: 1px solid #f3f5f8;
 }
 
 header > section {
@@ -148,12 +147,13 @@ header > section {
 }
 
 /* ---------------- */
-/* ASIDE 1 menu*/
+/* ASIDE*/
 /* -------------------- */
 
 aside {
     overflow: auto;
 }
+/* ASIDE 1 menu*/
 
 .menu.first > ul > li > a:hover {
     background-color: #f3f5f8;
@@ -191,6 +191,51 @@ aside {
 
 span.wrap-text {
     white-space: normal;
+}
+
+/* ---------------- */
+/* NAV*/
+/* -------------------- */
+.nav-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    padding: 0 1.2rem;
+}
+.nav-wrapper > div {
+    background-color: #f3f5f8;
+    padding: 0.5rem 0.8rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.nav-wrapper a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-wrapper span {
+    white-space: nowrap;
+}
+
+.nav-wrapper > div:nth-child(4) {
+    background-color: #f23160;
+}
+.nav-wrapper > div:nth-child(11) {
+    background-color: #d20a0a;
+}
+.nav-wrapper > div:nth-child(7) {
+    background-color: #002cfe;
+}
+
+.white-slap {
+    filter: brightness(0) invert();
+}
+
+.white-text {
+    color: white;
 }
 
 /* ---------------- */
