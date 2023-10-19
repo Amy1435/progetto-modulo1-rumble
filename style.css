@@ -434,7 +434,7 @@ main > section {
 footer {
     display: flex;
     padding: 2rem;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 footer ul li {
@@ -461,6 +461,11 @@ footer a {
 
 .footer-text-small > span {
     font-size: 0.7rem;
+}
+
+.footer-rigth {
+    display: flex;
+    gap: 2rem;
 }
 /* ---------------- */
 /* MEDIA QUERY */
